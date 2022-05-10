@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+/* 공통 스타일 */
+.sec .container{
+    width: 100%;
+}
+.sec h2::after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #de6969;
+}
+/* 모바일 수평 스크롤 금지 */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* 헤더 스타일 */
+.header .row{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
+    padding-top: 300px;
+    padding-left: 400px;
+}
+.nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    color:#f8bcc2;
+    z-index: 1000;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px;
+}
+
+/* 어바웃미 스타일 */
+.aboutme{
+    position: relative;
+}
+.aboutme .row{
+    height: 100vh;
+}
+.aboutme h2{
+    font-weight: 600;
+    font-size: 64px;
+    color:#f8bcc2;
+    padding: 100px 0px 0px 500px;
+    text-align: center;
+}
+.aboutme .block01{
+    width: 40%;
+    height: 600px;
+    background-color: rgb(232, 218, 235);
+    position: absolute;
+    top:50%;
+    left:35%;
+    transform:translate(-50%,-50%);
+    border-radius: 10%;
+}
+.aboutme .aboutme-img{
+    width: 20%;
+    position: absolute;
+    top:50%;
+    left:35%;
+    transform:translate(-50%,-50%);
+    z-index: 998;
+}
+.aboutme-img img{
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+}
+.aboutme .aboutme-box{
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f8bcc2;
+    position: absolute;
+    top:60%;
+    left:65%;
+    transform:translate(-50%,-50%);
+}
+.aboutme hr{
+    margin: 30px 0;
+}
+.aboutme .aboutme-txt h3,
+.aboutme .aboutme-education h4{
+    font-weight: 700;
+    font-size: 18px;
+    color: #de6969;
+}
+.aboutme .aboutme-txt p,
+.aboutme .aboutme-education p{
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.aboutme .aboutme-txt i,
+.aboutme .aboutme-education span{
+    font-weight: 600;
+    color: #de6969;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.far{
+    font-size: 22px;
+}
+.fab{
+    font-size: 24px;
+}
+.fas{
+    font-size: 20px;
+}
+
+/* 스킬 스타일 */
+.skills h2{
+    font-weight: 600;
+    font-size: 64px;
+    color:#f8bcc2;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.skills .row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100vh;
+}
+.skill{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 35%;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #f8dede;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.skills .html{
+    margin-left: 100px;
+}
+.skills .github{
+    margin-right: 95px;
+}
+.skill .fas,.skill .fab{
+    font-size: 64px;
+    text-shadow: #de6969 1px 0 10px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.skill p{
+    color: #de6969;
+    text-shadow: #fff 3px 0 10px;
+}
+
+/* 프로젝트 스타일 */
+.project .row{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+}
+.project h2{
+    font-weight: 600;
+    font-size: 64px;
+    color:#f8bcc2;
+    text-align: center;
+    padding: 150px 0;
+}
+.prj{
+    margin: 100px 100px;
+}
+
+.project .project01{
+    margin-top: 0;
+}
+.prj-img{
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    float: left;
+}
+.prj-txt{
+    width: 50%;
+    float: right;
+    padding-top:200px;
+}
+.prj p{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    color: #de6969
+}
+.prj-txt p> span{
+    color: #f8bcc2;
+    font-size: 16px;
+}
+.prj h4{
+    font-size: 64px;
+    font-weight: 600;
+    text-align: right;
+    color: #fff;
+    text-shadow: #de6969 1px 0 10px;
+}
+.prj hr{
+    border: 1px solid #f8bcc2;
+    margin: 10px 0;
+}
+
+/* 데스크탑 */
+@media (max-width:1200px){
+    .header .row{
+        height: 85vh;
+    }
+    .header h1{
+        font-size: 100px;
+        font-weight: 900;
+        padding-top: 300px;
+        padding-left: 300px;
+    }
+    .aboutme .block01{
+        width: 40%;
+    }
+    .aboutme .aboutme-img{
+        width: 30%;
+        left:32%;
+    }
+    .skills .row{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .skill {
+        margin-right: 20px;
+    }
+    .skills .html{
+        margin-left: 0px;
+    }
+    .skills .github{
+        margin-right: 0px;
+    }
+}
+
+@media(max-width:920px){
+    .aboutme h2{
+        padding: 105px 0px 200px 0px;
+    }
+    .aboutme .block01{
+        width: 50%;
+    }
+    .aboutme .aboutme-img{
+        width: 35%;
+        left:32%;
+    }
+    .aboutme .aboutme-box{
+        width: 41%;
+        height: auto;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: #f8bcc2;
+        position: absolute;
+        top:60%;
+        left:70%;
+        transform:translate(-50%,-50%);
+    }
+}
+
+
+/* 테블릿 */
+@media (max-width:767px){
+    .header .row{
+        height: 85vh;
+    }
+    .header h1{
+        font-size: 64px;
+        font-weight: 900;
+        padding-top: 260px;
+        padding-left: 100px;
+    }
+    .aboutme h2{
+        padding: 105px 0px 200px 0px;
+    }
+    .aboutme .row{
+        height: 100vh;
+    }
+    .aboutme .block01{
+        width: 80%;
+        height: 500px;
+        top: 45%;
+        left:50%;
+        border-radius: 20px;
+    }
+    .aboutme .aboutme-img{
+        width: 50%;
+        top:40%;
+        left:50%;
+    }
+    .aboutme .aboutme-box{
+        width: 80%;
+        top:70%;
+        left:50%;
+        z-index: 998;
+    }
+    .skills .row{
+        flex-flow: row wrap;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+    }
+    .skill{
+        width: 100%;
+        height: auto;
+        min-height: 10%;
+        font-size: 24px;
+        border-radius: 0%;
+        margin: 10px;
+    }
+    .skills .html{
+        margin-left: 10px;
+    }
+    .skills .github{
+        margin-right: 10px;
+    }
+    .skill .fas,.skill .fab{
+        font-size: 52px;
+        margin-bottom: 0px;
+    }
+    .project .row{
+        flex-flow: column nowrap;
+    }
+    .prj-img{
+        width: 100%;
+        cursor: pointer;
+    }
+    .prj-txt{
+        width: 100%;
+        float:center;
+        padding-top:10px;
+    }
+    .prj h4{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .prj hr{
+        border: 1px solid #f8bcc2;
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+/* 모바일 */
+@media (max-width:424px){
+    .container{
+        margin: 0;
+    }
+    .header h1{
+        font-size: 64px;
+        padding-top: 300px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .nav{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .nav ul{
+        margin: 20px 20px;
+    }
+    .aboutme .row{
+        margin: 50px;
+    }
+    .aboutme h2{
+        padding: 110px 0px 40px 0px;
+        font-size: 52px;
+    }
+    .aboutme .aboutme-img{
+        width: 65%;
+        top:40%;
+        left:50%;
+    }
+    .aboutme .aboutme-box{
+        width: 80%;
+        top:80%;
+
+    }
+    .aboutme .aboutme-txt h3,
+    .aboutme .aboutme-education h4{
+        font-size: 16px;
+    }
+    .aboutme .aboutme-txt p,
+    .aboutme .aboutme-education p{
+        font: 12px;
+    }
+    .aboutme .aboutme-txt i,
+    .aboutme .aboutme-education span{
+        margin-right: 10px;
+        margin-top: 8px;
+    }
+    .far{
+        font-size: 20px;
+    }
+    .fab{
+        font-size: 22px;
+    }
+    .fas{
+        font-size: 18px;
+    }
+    .skills h2{
+        font-size: 52px;
+        padding: 150px 0 40px 0;
+    }
+    .skills .row{
+        flex-flow: row wrap;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+    }
+    .skill{
+        width: 100%;
+        height: 10%;
+        font-size: 24px;
+        border-radius: 0%;
+        margin: 10px;
+    }
+    .skills .html{
+        margin-left: 10px;
+    }
+    .skills .github{
+        margin-right: 10px;
+    }
+    .skill .fas,.skill .fab{
+        font-size: 52px;
+        margin-bottom: 0px;
+    }
+    .project .row{
+        flex-flow: column nowrap;
+        margin: 0 auto;
+    }
+    .project h2{
+        font-size: 54px;
+        padding: 150px 0 100px 0;
+    }
+    .prj{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    .prj-txt{
+        width: 50%;
+
+    }
+    .prj h4{
+        font-size: 32px;
+    }
+    .prj p{
+        font-size: 18px;
+        text-align: center;
+    }
+}
